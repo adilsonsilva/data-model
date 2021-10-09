@@ -1,0 +1,13 @@
+ContactType: 
+  title: Contact Type
+  description: Contact Type
+  type: object
+  properties:
+    id:
+      type: string
+      enum: [email, phone, cellPhone, business]  
+      example: 'email'
+    description:
+      description: Description of type Contact
+      type: string    
+      example: xxxxxxx@xxxx.com.br

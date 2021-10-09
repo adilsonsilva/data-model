@@ -1,0 +1,18 @@
+Profile:
+  title: Profile
+  type: object
+  description: Domain profile
+  properties:
+    profileType:
+      type: string
+      enum: [admin, systemUser]
+      description: Profile type
+    code:
+      type: int64
+      description: Profile code
+    permissions:
+      type: array
+      items:
+        $ref: "#/components/schemas/Permission"
+      description: Profile permission
+      

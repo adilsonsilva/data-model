@@ -1,0 +1,12 @@
+Contact:
+  title: Contact
+  type: object
+  description: Contact of user
+  properties:
+    type:
+      allOf:
+        $ref: '#/components/schemas/ContactType'
+        description: 'Contact Type list'
+    data:
+      description: 'Contact Data'
+      type: string 

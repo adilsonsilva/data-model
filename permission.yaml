@@ -1,0 +1,17 @@
+Permission:
+  title: Permission
+  type: object
+  description: Permission of Profile
+  properties:
+    code:
+      type: int64
+      description: Permission code
+    function:
+      type: string
+      description: Permission function
+    rule:
+      type: array
+        $ref: "#/components/schemas/Rule"
+      decription: Permisson rules
+     
+  

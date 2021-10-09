@@ -1,0 +1,8 @@
+Domain:
+  title: Domain
+  type: object
+  description: Object of Domain Model
+  properties:
+    code:
+      type: int64   
+      description: Code domain model

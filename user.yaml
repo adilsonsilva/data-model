@@ -1,0 +1,51 @@
+User:
+  title: User
+  type: object
+  description: Data model user
+  properties:
+    domain:
+      type: object
+        $ref: "#/components/schemas/Domain"
+      description: user domain
+    firtsName:
+      type: string
+      description: User fists name
+    surname:
+      type: string
+      description: user sur name
+    nickName:
+      type: string
+      description: User nick name
+    birthday:
+      type: string
+      exemple: "2021-09-04"
+      description: user birth day
+      format: date  
+    contacts: 
+      type: array
+      items:
+        $ref: "#/components/schemas/Contact"   
+      description: contacts (e-mail e phones)
+    cpf:
+      type: string
+      description: user document unit
+    registreDate:
+      type: string
+      exemple: "2021-09-04"
+      description: user registre date system
+      format: date 
+    active:
+      type: boolean
+      description: user active of system
+    profile:
+      type: array
+      items:
+        $ref: "#/components/schemas/Profile"
+      description: user profile
+      description:
+    portfolio:
+      type: array
+      items:
+        $ref: "#/components/schemas/Portfolio"
+      description: user portfolio
+  

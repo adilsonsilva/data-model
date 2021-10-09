@@ -1,0 +1,14 @@
+Rule:
+  title:
+  type: object
+  description:
+  properties:
+    code:
+      type: int64
+      description: rule code
+    name:
+      type: string
+      description: rule name
+    active:
+      type: boolean
+      description: rule active

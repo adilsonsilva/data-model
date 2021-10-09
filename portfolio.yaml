@@ -1,0 +1,53 @@
+Portfolio:
+  title: Portfolio
+  type: object
+  description: Portifolio Domain Model
+    properties:
+      name:
+        type: string
+        description:
+      broker:
+        type: object
+        items:
+          $ref: "#/components/schemas/Broker"
+        description: Portfolio broker
+      startDate:
+        type: string
+        description: Portfolia starting date
+        exemple: "2021-09-04"
+        format: date
+      finalDate:
+        type: string
+        description: Portfolio final date
+        exemple: "2021-09-04"
+        format: date
+      stocks:
+        type: array
+        items:
+          $ref: "#/components/schemas/Stock"
+        description: portfolio stocks
+      initialCapital:
+        type: number
+        description: portfolio initial capital
+        exemple: 2000.00
+        format: decimal
+      contributions:
+        type: array
+        items:
+          $ref: "#/components/schemas/Contribution"
+        description: Portfolio contribution
+      operations:
+        type: array
+        items:
+          $ref: "#/components/schemas/Operation"
+        description: Portfolio operation 
+      comments:
+        type: string
+        description: Portfolio comments
+      withdrawals:
+        type: array
+        items:
+          $ref: "#/components/schemas/Withdraw"
+        description: Portfolio withdraw
+    
+        
